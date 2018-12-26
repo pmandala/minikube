@@ -1,11 +1,14 @@
-## Build a sample node application image
+### Build a sample node application image
 
 ```
-docker build -t node-app:8 .```
+docker build -t node-app:8 .
 
-## Push the image docker hub
+```
+
+### Push the image docker hub
 
 ```
 docker login
 
-docker docker push pmandala/node-app:8```
+docker docker push pmandala/node-app:8
+```

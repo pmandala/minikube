@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app-dep
+  labels:
+    app: node-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      name: node-app-pod
+      labels:
+        app: node-app
+    spec:
+      containers:
+      - name: node-app
+        image: pmandala/node-app:8
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+      imagePullSecrets: 
+      - name: dockerhub

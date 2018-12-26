@@ -2,15 +2,16 @@
 
 Create a security for the pulling the image from docker hub
 
-```
-kubectl create secret docker-registry 'dockerhub' --docker-username= --docker-password=   --docker-email= ```
+
+```kubectl create secret docker-registry dockerhub --docker-username= --docker-password=   --docker-email=```
 
 
 Setup Nginx Ingress Controller on Minikube
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/mandatory.yaml
-minikube addons enable ingress```
+minikube addons enable ingress
+```
 
 
 Deploy into minikube

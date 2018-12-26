@@ -1,4 +1,4 @@
-# Setting Minikube with Ingress Controller
+### Setting Minikube with Ingress Controller
 
 Create a security for the pulling the image from docker hub
 

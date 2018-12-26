@@ -2,7 +2,6 @@
 
 ```
 docker build -t node-app:8 .
-
 ```
 
 ### Push the image docker hub
